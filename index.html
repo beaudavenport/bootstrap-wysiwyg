@@ -6,6 +6,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/add-css.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -15,9 +16,10 @@
                 <div class="btn-group">
                     <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                      <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
-                      <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
-                      <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
+                        <li><a data-edit="fontSize 7"><font size="7">Giant</font></a></li>
+                        <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
+                        <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
+                        <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
                     </ul>
                 </div>
                 <div class="btn-group">
@@ -51,14 +53,21 @@
                 <div class="btn-group">
                     <a class="btn btn-default" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="fa fa-file-image-o"></i></a>
                     <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 41px; height: 30px;" />
-                    <a class="btn btn-default" title="Insert an astrology icon"><i class="fa fa-moon-o"></i></a>
+                    <a class="btn btn-default" title="Icon mode" data-edit="fontName AstroGadget"><i class="fa fa-moon-o"></i></a>
+                    <a class="btn btn-default" title="Text mode" data-edit="fontName sans-serif"><i class="fa fa-font"></i></a>
+                    <a class="btn btn-default" title="Toggle icon guide" data-toggle="collapse" data-target="#iconGuide"><i class="fa fa-info-circle"></i></a>
                 </div>
                 <div class="btn-group">
                     <a class="btn btn-default" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
                     <a class="btn btn-default" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
                 </div>
             </div>
-            <div class="panel panel-default">    
+            <div class="panel panel-default">
+                <!-- collapsed icon guide -->
+                <div class="collapse well" id="iconGuide">
+                    <p>Icon Guide</p>    
+                </div>
+                
                 <!-- editor div -->
                 <div id="editor" contenteditable="true">
                     Edit text here!
