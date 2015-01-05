@@ -2,3 +2,17 @@
     font-family: 'AstroGadget';
     src: url('AstroGadget.ttf') format('truetype');
 }
+.gadget {
+    font-family: 'AstroGadget';
+}
+.head {
+    margin-bottom: 0px;
+}
+.main {
+    background-color: #545454;
+    padding-top: 20px;
+}
+#editor {
+    max-height: 300px;
+    overflow: scroll;
+}
