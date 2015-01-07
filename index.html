@@ -4,117 +4,143 @@
         <title>Astro-wysiwyg</title>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+        <link href='//fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="assets/add-css.css" rel="stylesheet">
     </head>
     <body>
-        <div class="page-header text-center head">
-            <h1>Astro-bootstrap-wysiwyg</h1>
-            <h2><span class="text-muted gadget">d</span></h2>
-        </div>
-        <div class="container-fluid main">
-
-            <!-- editor toolbar -->
-            <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
-                <div class="btn-group">
-                    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a data-edit="fontSize 7"><font size="7">Giant</font></a></li>
-                        <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
-                        <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
-                        <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
-                    </ul>
-                </div>
-                <div class="btn-group">
-                    <a class="btn btn-default" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
-                    <a class="btn btn-default" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
-                    <a class="btn btn-default" data-edit="strikethrough" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>
-                    <a class="btn btn-default" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
-                </div>
-                <div class="btn-group">
-                    <a class="btn btn-default" data-edit="insertunorderedlist" title="Bullet list"><i class="fa fa-list-ul"></i></a>
-                    <a class="btn btn-default" data-edit="insertorderedlist" title="Number list"><i class="fa fa-list-ol"></i></a>
-                    <a class="btn btn-default" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="fa fa-outdent"></i></a>
-                    <a class="btn btn-default" data-edit="indent" title="Indent (Tab)"><i class="fa fa-indent"></i></a>
-                </div>
-                <div class="btn-group">
-                    <a class="btn btn-default" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
-                    <a class="btn btn-default" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
-                    <a class="btn btn-default" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
-                    <a class="btn btn-default" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
-                </div>
-                <div class="btn-group">
-                    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="fa fa-link"></i></a>
-                    <div class="dropdown-menu input-append">
-                        <input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
-                        <button class="btn btn-default" type="button">Add</button>
+        <div class="container-fluid">
+            <div class="page-header text-center head">
+                <h1>astro-bootstrap-wysiwyg</h1>
+                <h3 class="text-muted">A fork of <a href="//mindmup.github.io/bootstrap-wysiwyg">bootstrap-wysiwyg by Mindmup</a></h3>
+            </div>
+            <div class="text-center">
+                <br />
+                <a class="btn btn-info" href="https://github.com/beaudavenport/bootstrap-wysiwyg">View astro-bootstrap-wysiwyg on Github</a>
+                <a class="btn btn-info" href="https://github.com/mindmup/bootstrap-wysiwyg">View Mindmup's original bootstrap-wysiwyg</a>
+                <br />
+                <br />
+                <a data-count-api="/users/beaudavenport#followers" data-count-href="/beaudavenport/followers" href="https://github.com/beaudavenport" class="github-button">Follow @beaudavenport</a>
+                <h2><span class="text-muted gadget">l</span></h2>
+            </div> 
+            <div class="container-fluid main">
+    
+                <!-- editor toolbar -->
+                <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+                    <div class="btn-group">
+                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a data-edit="fontSize 7"><font size="7">Giant</font></a></li>
+                            <li><a data-edit="fontSize 5"><font size="5">Huge</font></a></li>
+                            <li><a data-edit="fontSize 3"><font size="3">Normal</font></a></li>
+                            <li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-default" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
+                        <a class="btn btn-default" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
+                        <a class="btn btn-default" data-edit="strikethrough" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>
+                        <a class="btn btn-default" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-default" data-edit="insertunorderedlist" title="Bullet list"><i class="fa fa-list-ul"></i></a>
+                        <a class="btn btn-default" data-edit="insertorderedlist" title="Number list"><i class="fa fa-list-ol"></i></a>
+                        <a class="btn btn-default" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="fa fa-outdent"></i></a>
+                        <a class="btn btn-default" data-edit="indent" title="Indent (Tab)"><i class="fa fa-indent"></i></a>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-default" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
+                        <a class="btn btn-default" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
+                        <a class="btn btn-default" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
+                        <a class="btn btn-default" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="fa fa-link"></i></a>
+                        <div class="dropdown-menu input-append">
+                            <input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
+                            <button class="btn btn-default" type="button">Add</button>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-default" data-edit="unlink" title="Remove Hyperlink"><i class="fa fa-cut"></i></a>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-default" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="fa fa-file-image-o"></i></a>
+                        <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 42px; height: 32px;" />
+                    </div>
+                    <div class="btn-group">    
+                        <a class="btn btn-default" id="iconMode" title="Icon mode" data-edit="fontName AstroGadget"><i class="fa fa-moon-o"></i></a>
+                        <a class="btn btn-default" title="Toggle icon guide" data-toggle="collapse" data-target="#iconGuide"><i class="fa fa-info-circle"></i></a>
+                        <a class="btn btn-default" title="Text mode" data-edit="fontName sans-serif"><i class="fa fa-font"></i></a>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-default" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
+                        <a class="btn btn-default" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
                     </div>
                 </div>
-                <div class="btn-group">
-                    <a class="btn btn-default" data-edit="unlink" title="Remove Hyperlink"><i class="fa fa-cut"></i></a>
-                </div>
-                <div class="btn-group">
-                    <a class="btn btn-default" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="fa fa-file-image-o"></i></a>
-                    <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" style="opacity: 0; position: absolute; top: 0px; left: 0px; width: 42px; height: 32px;" />
-                </div>
-                <div class="btn-group">    
-                    <a class="btn btn-default" id="iconMode" title="Icon mode" data-edit="fontName AstroGadget"><i class="fa fa-moon-o"></i></a>
-                    <a class="btn btn-default" title="Toggle icon guide" data-toggle="collapse" data-target="#iconGuide"><i class="fa fa-info-circle"></i></a>
-                    <a class="btn btn-default" title="Text mode" data-edit="fontName sans-serif"><i class="fa fa-font"></i></a>
-                </div>
-                <div class="btn-group">
-                    <a class="btn btn-default" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
-                    <a class="btn btn-default" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
+                <br />
+                <div class="panel panel-default">
+                    
+                    <!-- collapsed icon guide -->
+                    <div class="collapse well well-sm" id="iconGuide">
+                        <p>
+                            <span class="gadget">A</span> - A &nbsp; <span class="gadget">B</span> - B &nbsp; <span class="gadget">C</span> - C &nbsp;
+                            <span class="gadget">D</span> - D &nbsp; <span class="gadget">E</span> - E &nbsp; <span class="gadget">F</span> - F &nbsp;
+                            <span class="gadget">G</span> - G &nbsp; <span class="gadget">H</span> - H &nbsp; <span class="gadget">I</span> - I &nbsp;
+                            <span class="gadget">J</span> - J &nbsp; <span class="gadget">K</span> - K &nbsp; <span class="gadget">L</span> - L &nbsp;
+                            <span class="gadget">M</span> - M &nbsp; <span class="gadget">N</span> - M &nbsp; <span class="gadget">O</span> - O &nbsp;
+                            <span class="gadget">P</span> - P &nbsp; <span class="gadget">Q</span> - Q &nbsp; <span class="gadget">R</span> - R &nbsp;
+                            <span class="gadget">a</span> - a &nbsp; <span class="gadget">b</span> - b &nbsp; <span class="gadget">c</span> - c &nbsp;
+                            <span class="gadget">d</span> - d &nbsp; <span class="gadget">e</span> - e &nbsp; <span class="gadget">f</span> - f &nbsp;
+                            <span class="gadget">g</span> - g &nbsp; <span class="gadget">h</span> - h &nbsp; <span class="gadget">i</span> - i &nbsp;
+                            <span class="gadget">j</span> - j &nbsp; <span class="gadget">k</span> - k &nbsp; <span class="gadget">l</span> - l &nbsp;
+                            <span class="gadget">$</span> - $ &nbsp; <span class="gadget">*</span> - * &nbsp; <span class="gadget">%</span> - % &nbsp;
+                            <span class="gadget">"</span> - " &nbsp; <span class="gadget">'</span> - ' &nbsp; <span class="gadget">#</span> - # &nbsp;
+                            <span class="gadget">&</span> - & &nbsp; <span class="gadget">(</span> - ( &nbsp; <span class="gadget">)</span> - ) &nbsp;
+                            <span class="gadget">!</span> - ! &nbsp;
+                        </p>    
+                    </div>
+                    
+                    <!-- editor div -->
+                    <div id="editor" contenteditable="true">
+                        Edit text here!
+                    </div>
+                    
+                    
+                    
                 </div>
             </div>
-            <br />
-            <div class="panel panel-default">
-                
-                <!-- collapsed icon guide -->
-                <div class="collapse well well-sm" id="iconGuide">
-                    <p>
-                        <span class="gadget">A</span> - A &nbsp; <span class="gadget">B</span> - B &nbsp; <span class="gadget">C</span> - C &nbsp;
-                        <span class="gadget">D</span> - D &nbsp; <span class="gadget">E</span> - E &nbsp; <span class="gadget">F</span> - F &nbsp;
-                        <span class="gadget">G</span> - G &nbsp; <span class="gadget">H</span> - H &nbsp; <span class="gadget">I</span> - I &nbsp;
-                        <span class="gadget">J</span> - J &nbsp; <span class="gadget">K</span> - K &nbsp; <span class="gadget">L</span> - L &nbsp;
-                        <span class="gadget">M</span> - M &nbsp; <span class="gadget">N</span> - M &nbsp; <span class="gadget">O</span> - O &nbsp;
-                        <span class="gadget">P</span> - P &nbsp; <span class="gadget">Q</span> - Q &nbsp; <span class="gadget">R</span> - R &nbsp;
-                        <span class="gadget">a</span> - a &nbsp; <span class="gadget">b</span> - b &nbsp; <span class="gadget">c</span> - c &nbsp;
-                        <span class="gadget">d</span> - d &nbsp; <span class="gadget">e</span> - e &nbsp; <span class="gadget">f</span> - f &nbsp;
-                        <span class="gadget">g</span> - g &nbsp; <span class="gadget">h</span> - h &nbsp; <span class="gadget">i</span> - i &nbsp;
-                        <span class="gadget">j</span> - j &nbsp; <span class="gadget">k</span> - k &nbsp; <span class="gadget">l</span> - l &nbsp;
-                        <span class="gadget">$</span> - $ &nbsp; <span class="gadget">*</span> - * &nbsp; <span class="gadget">%</span> - % &nbsp;
-                        <span class="gadget">"</span> - " &nbsp; <span class="gadget">'</span> - ' &nbsp; <span class="gadget">#</span> - # &nbsp;
-                        <span class="gadget">&</span> - & &nbsp; <span class="gadget">(</span> - ( &nbsp; <span class="gadget">)</span> - ) &nbsp;
-                        <span class="gadget">!</span> - ! &nbsp;
-                    </p>    
-                </div>
-                
-                <!-- editor div -->
-                <div id="editor" contenteditable="true">
-                    Edit text here!
-                </div>
-                
-                
-                
-            </div>
-        </div>
         
-            <div class="well">
+            <div>
                 <h2>A rich text editor for professional astrologers</h2>
                 <p>A fork of <a href="//mindmup.github.io/bootstrap-wysiwyg">Mindmup's Bootstrap Wysiwyg</a> rich text editor,
                 designed especially for astrology content.  Using the <a href="//www.dafont.com/astro-gadget.font">AstroGadget</a> font by 
                 Jason Davies, Astro-bootstrap-wysiwyg features the ability to enter "Icon Mode" and add font-based astrological icons as normal
                 text, with a toggleable dropdown guide. Font icons are perfect for responsive sites and content that can scale across devices.</p>
                 <h3>Guide for use</h3>
-                <p>Refer to the <a href="//mindmup.github.io/bootstrap-wysiwyg/">Mindmup page </a> for basic usage.</p>
+                <p><strong>Refer to the <a href="//mindmup.github.io/bootstrap-wysiwyg/">Mindmup page </a> first for basic usage.</strong></p>
                 <p>In addition to the original dependencies (jquery, bootstrap, and jquery hotkeys), you must include the AstroGadget font file
-                in your assets.</p>
+                in your assets. <a href="http://www.dafont.com/astro-gadget.font">Download the font and accompanying text file</a>, include 
+                the files in your application assets, then create a <code>@font-face</code> in your CSS file, like so: </p>
+                <p><code>@font-face {<br />
+                font-family: 'AstroGadget';<br />
+                src: url('AstroGadget.ttf') format('truetype'); // ensure the src url reflects the correct path to your font file!<br />
+                }</code></p>
+                <p>With your dependencies in place and your <code>@font-face</code> specified, feel free to customize as you see fit! </p>
+                <br />
+                <p class="lead">Additional notes: </p>
+                <ul>
+                    <li>The "Text mode" in the example reverts using <code>fontName sans-serif</code>. Ensure that, if your application uses a different
+                    font, that you specifiy it here so that it reverts correctly!</li>
+                    <li>The example mark-up utilizes <a href="//fortawesome.github.io/Font-Awesome/">Font Awesome</a> for toolbar 
+                    styling. Don't forget to include Font Awesome in your dependencies, or choose another icon font and adjust your markup
+                    accordingly.</li>
+                </ul>
             </div>
+        </div>
         
-    
-    
         <!-- script dependencies -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -122,6 +148,7 @@
         <script src="assets/bootstrap-wysiwyg/bootstrap-wysiwyg.js"></script>
         <script src="assets/index.js"></script>
 
-    
+        <!-- Github button from buttons.github.io -->
+        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
     </body>
 </html>
